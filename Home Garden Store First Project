@@ -1,0 +1,39 @@
+/** HomeGardenStore:
+Shovel
+Hose
+Bucket
+Trash Can
+Grill
+Fountain
+Stones
+Grass Seeds
+Bird Feeds
+Deer Feeds
+Seeds
+Repellant
+Tools
+Clippers
+Pool Maintanance
+**/
+
+CREATE TABLE HomeGardenStore (id INTEGER PRIMARY KEY, name TEXT, aisle INTEGER, Price INTEGER, quantity INTEGER);
+
+INSERT INTO HomeGardenStore VALUES (1, "Shovel", 1, 12.99,  85);
+INSERT INTO HomeGardenStore VALUES (2, "Hose",2, 5.80, 70);
+INSERT INTO HomeGardenStore VALUES (3, "Bucket", 3, 3.45,  45);
+INSERT INTO HomeGardenStore VALUES (4, "Trash Can", 4, 15.99,  105);
+INSERT INTO HomeGardenStore VALUES (5," Grill", 5, 99.99,  12);
+INSERT INTO HomeGardenStore VALUES (6, "Fountain", 6, 145,  10);
+INSERT INTO HomeGardenStore VALUES (7, "Stones", 7, 4.99,  65);
+INSERT INTO HomeGardenStore VALUES (8, "Grass Seeds", 8, 24.99,  100);
+INSERT INTO HomeGardenStore VALUES (9, "Bird Feeds", 9, 4.95,  55);
+INSERT INTO HomeGardenStore VALUES (10, "Seeds", 10, 1.99,  275);
+INSERT INTO HomeGardenStore VALUES (11, "Deer Feeds", 11, 5.99, 15);
+INSERT INTO HomeGardenStore VALUES (12, "Repellant",12, 2.65, 265);
+INSERT INTO HomeGardenStore VALUES (13, "Tools", 13, 9.85, 122);
+INSERT INTO HomeGardenStore VALUES (14, "Clippers", 14, 45.95, 5);
+INSERT INTO HomeGardenStore VALUES (15, "Pool Maintanance", 15, 65, 12);
+
+SELECT * FROM HomeGardenStore;
+
+SELECT sum (Quantity) FROM (HomeGardenStore );
